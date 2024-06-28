@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+@mixin listReset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  @mixin btnReset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  @mixin container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  
+  @mixin sectionTitle {
+    margin: 0;
+  }
+
+  @mixin linkAfter {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $textColor;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+  
+  @mixin linksFocus {
+    outline: none;
+    opacity: 1;
+  }
+  
+  @mixin linksHover {
+    opacity: 1;
+  }
+  
+  @mixin linksActive {
+    opacity: 1;
+  }
