@@ -39,6 +39,7 @@ burger.addEventListener('click',
 function () {
   burger.classList.toggle('burger--active');
   menu.classList.toggle('burger-menu--active');
+  document.body.classList.toggle('stop-scroll');
 })
 
 menuLinks.forEach(function (el) {
